@@ -20,7 +20,7 @@ df = pd.DataFrame(registros)
 df["fecha"] = pd.to_datetime(df["fecha"])
 df = df.sort_values("fecha")
 
-df.to_csv("data/tipo_cambio_usd.csv", index=False)
+df.to_csv("data/processed/tipo_cambio_usd.csv", index=False)
 
 print(df.head())
 print(df.shape)
